@@ -27,6 +27,8 @@ namespace AnimalPark
                 ElephantCage.AddAnimalToPen(new Elephant());
             }
             ZoologiskHave.AnimalCages.Add(ElephantCage);
+
+            //Bleeds alot of Memory, reason unknown
             Task task = new Task(ZoologiskHave.RunPark);
             task.Start();
             Console.ReadKey();
