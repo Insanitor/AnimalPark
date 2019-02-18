@@ -100,6 +100,7 @@ namespace AnimalPark.Models.AnimalPark
         //Async Method to make all the park function
         //Make the animals start pooping
         //Make the workers start working
+        //Checks time, if it's time to close
         public async void RunPark()
         {
             foreach (Cage cage in AnimalCages)
